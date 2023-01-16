@@ -16,6 +16,7 @@ public class ExceptionHandlingXbyY {
         catch(java.util.InputMismatchException e2){
             System.out.println(x+" and "+y+" are not 32 bit signed Integer!");
         }
+
         catch(Exception e){
             System.out.println("Something Went Wrong");
         }
