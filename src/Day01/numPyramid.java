@@ -27,6 +27,9 @@ public class numPyramid {
 //            }
 //            System.out.println();
 //        }
-
+//        fourth pattern
+        for (int i = 0; i <= n; i++){
+                System.out.println((int)Math.pow(11,i));
+        }
     }
 }
