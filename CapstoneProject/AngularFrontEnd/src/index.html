@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Management</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <h1>Student Management</h1>
+    <table id="students-table">
+      <tr>
+        <th>Name</th>
+        <th>Roll Number</th>
+        <th>Address</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+    <button id="add-student-button">Add Student</button>
+
+    <!-- Modal for adding a student -->
+    <div id="add-student-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add Student</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+          <br><br>
+          <label for="roll-number">Roll Number:</label>
+          <input type="text" id="roll-number" required>
+          <br><br>
+          <label for="address">Address:</label>
+          <textarea id="address" required></textarea>
+          <br><br>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal for editing a student -->
+    <div id="edit-student-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Student</h2>
+        <form>
+          <input type="hidden" id="student-id">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+          <br><br>
+          <label for="roll-number">Roll Number:</label>
+          <input type="text" id="roll-number" required>
+          <br><br>
+          <label for="address">Address:</label>
+          <textarea id="address" required></textarea>
+          <br><br>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
